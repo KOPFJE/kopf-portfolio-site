@@ -1,23 +1,198 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(38, 38, 38);
-  text-align: center;
+  background: #262626;
   color: #ededed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  background: url(/public/bg.png);
+  background-position: center 50px;
+  background-repeat: repeat-x;
+  min-height: 500px;
 }
 
-header {
-  text-align: center;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#siteheader {
+  margin: 0;
+  padding-left: 15px;
   width: 100%;
-  height: 50px;
+  height: 75px;
   background: rgb(20,20,20);
+  top: 0;
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+}
+
+.maincontainer {
+  text-align: left;
+}
+
+#maincontent {
+  width: 30%;
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+#portfoliolinks {
+  margin: 0;
+  padding: 0;
+}
+
+#portfoliolinks li {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  width : 200px;
+  text-align: center;
+  height: 40px;
+  background-color: #636363;
+  border-radius: 8px;
+}
+
+#portfoliolinks li:hover {
+  background-color:#67d07a;
+}
+
+
+#portfoliolinks a, #portfoliolinks a:visited {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+  padding-top: 10px;
+  color: #ededed;
+  text-decoration: none;
+}
+
+#portfoliolinks a:hover {
+  color:#262626;
+}
+
+
+.container {
+  padding: 5px 0 0 0;
+}
+#logo {
+  width: 180px;
+  text-align: center;
+}
+#logo h1, #logo h1:visited {
+  font-family: 'Coves';
+  font-size: 2em;
+  color: #67d07a;
+  font-weight: bolder;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  text-transform: lowercase;
+}
+#logo h1:hover {
+  border-bottom: 1px solid #67d07a;
+}
+#logo h2, #logo h2:hover, #logo h2:visited {
+  font-family: 'Coves';
+  font-size: 1.4em;
+  color: #fff;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 0 0 3px;
+  text-transform: uppercase;
+}
+
+#logo a, #logo a:hover, #logo a:visited {
+  text-decoration: none;
+}
+
+/* Hamburger menu */
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+  background-color: #67d07a;
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+  background-color: #67d07a;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #67d07a;
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 3;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #67d07a;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #00000050;
+  box-shadow: 2px 0 6px 2px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 1;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #67d07a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #444444;
+}
+.menu__item:visited, .menu__item:hover, .menu__item:visited:hover {
+  color: #67d07a;
+}
+
+@font-face {
+  font-family: 'Nexa Text Bold';
+  src: url(/public/NexaTextDemo-Bold.ttf);
 }

@@ -1,10 +1,25 @@
-function Header() {
+function Header(props) {
     return(
-      <header>
-        <div class="container">
-          <h1>Taajuus</h1>
+      <div>
+          <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+              
+          <ul class="menu__box">
+            <li><a class="menu__item" href="/">Home</a></li>
+          </ul>
         </div>
-      </header>
-    )
+        <header id="siteheader">
+          <div id="logo" class="container">
+            <a href="/">
+              <h1>Lauri Niskanen</h1>
+              <h2>Portfolio</h2>
+            </a>
+          </div>
+        </header>
+      </div>
+    );
   }
   export default Header;
