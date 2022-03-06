@@ -2,8 +2,9 @@ function Header() {
     return(
       <div>
       <header>
-        <div class="container">
-          <h1>Taajuus</h1>
+        <div id="logo" class="container">
+          <h1>Lauri Niskanen</h1>
+          <h2>Portfolio</h2>
         </div>
       </header>
       <nav>
