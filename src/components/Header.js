@@ -3,8 +3,10 @@ function Header() {
       <div>
       <header>
         <div id="logo" class="container">
-          <h1>Lauri Niskanen</h1>
-          <h2>Portfolio</h2>
+          <a href="/">
+            <h1>Lauri Niskanen</h1>
+            <h2>Portfolio</h2>
+          </a>
         </div>
       </header>
       <nav>

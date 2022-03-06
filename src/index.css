@@ -57,7 +57,7 @@ header {
   width: 180px;
   text-align: center;
 }
-#logo h1 {
+#logo h1, #logo h1:visited {
   font-family: 'Coves';
   font-size: 2em;
   color: #67d07a;
@@ -66,7 +66,10 @@ header {
   margin: 0;
   text-transform: lowercase;
 }
-#logo h2 {
+#logo h1:hover {
+  border-bottom: 1px solid #67d07a;
+}
+#logo h2, #logo h2:hover, #logo h2:visited {
   font-family: 'Coves';
   font-size: 1.4em;
   color: #fff;
@@ -75,6 +78,10 @@ header {
   font-weight: bolder;
   margin: 0 0 0 3px;
   text-transform: uppercase;
+}
+
+#logo a, #logo a:hover, #logo a:visited {
+  text-decoration: none;
 }
 
 /* Hamburger menu */
