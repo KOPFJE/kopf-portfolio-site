@@ -1,16 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Content from './components/Content';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Mainpage from './components/Mainpage';
+import Dashboard from './components/Dashboard';
 
 
 function App() {
   return (
-    <div id="maincontainer">
-      <Header />
-      <Content />
-      <Footer />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Mainpage />} />
+          <Route path="/admin" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

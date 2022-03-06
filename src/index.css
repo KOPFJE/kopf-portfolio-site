@@ -3,17 +3,22 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/public/bg.png) rgb(38, 38, 38);
+  background: #262626;
+  color: #ededed;
+}
+
+#root {
+  background: url(/public/bg.png);
   background-position: center 50px;
   background-repeat: repeat-x;
-  color: #ededed;
+  min-height: 500px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-header {
+#siteheader {
   margin: 0;
   padding-left: 15px;
   width: 100%;
@@ -22,11 +27,17 @@ header {
   top: 0;
   text-align: left;
   position: fixed;
-  z-index: 4;
+  z-index: 2;
 }
 
-#maincontainer {
-  margin:40px 0 0 0;
+.maincontainer {
+  text-align: left;
+}
+
+#maincontent {
+  width: 30%;
+  margin: auto;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -40,15 +51,31 @@ header {
   margin: auto;
   margin-bottom: 5px;
   width : 200px;
+  text-align: center;
   height: 40px;
   background-color: #636363;
   border-radius: 8px;
 }
 
-#portfoliolinks a {
-  padding-top: 5px;
-  color: #ededed;
+#portfoliolinks li:hover {
+  background-color:#67d07a;
 }
+
+
+#portfoliolinks a, #portfoliolinks a:visited {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+  padding-top: 10px;
+  color: #ededed;
+  text-decoration: none;
+}
+
+#portfoliolinks a:hover {
+  color:#262626;
+}
+
 
 .container {
   padding: 5px 0 0 0;
@@ -112,7 +139,7 @@ header {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 3;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -122,7 +149,6 @@ header {
   width: 100%;
   height: 3px;
   background-color: #67d07a;
-  animation: flicker-box 2s infinite alternate;
   transition-duration: .25s;
 }
 .menu__btn > span::before {
@@ -147,7 +173,7 @@ header {
   background-color: #00000050;
   box-shadow: 2px 0 6px 2px rgba(0, 0, 0, .4);
   transition-duration: .25s;
-  z-index: 2;
+  z-index: 1;
 }
 .menu__item {
   display: block;
