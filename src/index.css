@@ -81,11 +81,11 @@ code {
   padding: 5px 0 0 0;
 }
 #logo {
-  width: 180px;
+  width: 200px;
   text-align: center;
 }
 #logo h1, #logo h1:visited {
-  font-family: 'Coves';
+  font-family: 'Coves Bold';
   font-size: 2em;
   color: #67d07a;
   font-weight: bolder;
@@ -97,7 +97,7 @@ code {
   border-bottom: 1px solid #67d07a;
 }
 #logo h2, #logo h2:hover, #logo h2:visited {
-  font-family: 'Coves';
+  font-family: 'Coves Bold';
   font-size: 1.4em;
   color: #fff;
   letter-spacing: 0.3em;
@@ -193,6 +193,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Nexa Text Bold';
-  src: url(/public/NexaTextDemo-Bold.ttf);
+  font-family: 'Coves Bold';
+  src: url('/public/Coves Bold.otf');
 }
