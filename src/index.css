@@ -35,7 +35,7 @@ code {
 }
 
 #maincontent {
-  width: 30%;
+  width: 50%;
   margin: auto;
   padding-top: 80px;
   text-align: center;
@@ -75,7 +75,12 @@ code {
 #portfoliolinks a:hover {
   color:#262626;
 }
-
+.postheading {
+  color:#67d07a;
+  font: 'Coves Bold';
+  font-size: 2em;
+  line-height: 0.5em;
+}
 
 .container {
   padding: 5px 0 0 0;
@@ -109,6 +114,33 @@ code {
 
 #logo a, #logo a:hover, #logo a:visited {
   text-decoration: none;
+}
+
+.projectinfo {
+  background: rgb(0,0,0,.4);
+  border-bottom: 1px solid #67d07a;
+}
+
+.teamsize {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stackinfo, .languageinfo { 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stackinfo li, .languageinfo li {
+  display: inline;
+}
+
+.stackinfo li:after, .languageinfo li:after {
+  content: ', ';
+}
+
+.stackinfo li:last-child:after, .languageinfo li:last-child:after {
+  content: '';
 }
 
 /* Hamburger menu */

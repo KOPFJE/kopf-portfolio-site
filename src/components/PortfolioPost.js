@@ -1,9 +1,9 @@
 function PortfolioPost(props) {
     return(
         <div class="portfolioPost">
-            <h3>TJTS5901 - Digicanem Dogmap</h3>
+            <h3 class="postheading">TJTS5901 - Digicanem Dogmap</h3>
             <header class="projectinfo">
-                <p class="teamsize group">Group: 4</p>
+                <p class="teamsize">Group: 4</p>
                 <ul class="languageinfo">
                     <li>Python</li>
                     <li>JavaScript</li>
