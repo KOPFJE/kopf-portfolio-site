@@ -75,12 +75,7 @@ code {
 #portfoliolinks a:hover {
   color:#262626;
 }
-.postheading {
-  color:#67d07a;
-  font: 'Coves Bold';
-  font-size: 2em;
-  line-height: 0.5em;
-}
+
 
 .container {
   padding: 5px 0 0 0;
@@ -98,9 +93,11 @@ code {
   margin: 0;
   text-transform: lowercase;
 }
+
 #logo h1:hover {
   border-bottom: 1px solid #67d07a;
 }
+
 #logo h2, #logo h2:hover, #logo h2:visited {
   font-family: 'Coves Bold';
   font-size: 1.4em;
@@ -116,19 +113,79 @@ code {
   text-decoration: none;
 }
 
+.postheading {
+  color:#67d07a;
+  font-family: 'Coves Light';
+  text-shadow:2px 2px 2px rgba(0, 0, 0, .4);
+  font-size: 2em;
+  line-height: 0.5em;
+  margin-bottom: 0.1em;
+}
+
+.postcontent {
+  display: flex;
+}
+
+.imgleft {
+  order: 0;
+  margin-left: -25%;
+  margin-right: 1em;
+}
+
+.imgright {
+  order: 1;
+  margin-right: -25%;
+  margin-left: 1em;
+}
+
+.postcontent img {
+  display: block;
+  border: 1px solid rgba(0,0,0,.4);
+  max-width: 50%;
+  max-height: 20%;
+  border-radius: 3%;
+  box-shadow:2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.visible {
+  animation: fadein 1s forwards;
+}
+
 .projectinfo {
   background: rgb(0,0,0,.4);
+  padding: 0 10px 0 10px;
   border-bottom: 1px solid #67d07a;
+  border-top: 1px solid #67d07a;
+  margin: 0 0 1em 0;
 }
 
 .teamsize {
   display: inline-block;
   vertical-align: middle;
+  background-image: url('/public/teamsize.png');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  padding-left: 2em;
 }
 
 .stackinfo, .languageinfo { 
   display: inline-block;
   vertical-align: middle;
+  margin-left: 1em;
+}
+
+.stackinfo {
+  background-image: url('/public/stack-45.png');
+  background-repeat: no-repeat;
+  background-size: 4%;
+  padding-left: 1.5em;
+}
+
+.languageinfo {
+  background-image: url('/public/languageicon.png');
+  background-repeat: no-repeat;
+  background-size: 12%;
+  padding-left: 2em;
 }
 
 .stackinfo li, .languageinfo li {
@@ -224,7 +281,24 @@ code {
   color: #67d07a;
 }
 
+/* Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Fonts */
 @font-face {
   font-family: 'Coves Bold';
   src: url('/public/Coves Bold.otf');
+}
+
+@font-face {
+  font-family: 'Coves Light';
+  src: url('/public/Coves Light.otf');
 }
