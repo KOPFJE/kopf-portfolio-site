@@ -1,17 +1,19 @@
 function Info(props) {
     return(
         <div id="infocontent">
-            <h3>Who am I?</h3>
+            <h2>Who am I?</h2>
             <div id="infocontainer" class="maincontainer">
+
                 <div id="sideinfo">
+                    <img src="/facepic.jpg" alt="Me" id="infoimage" />
                     <h4>Links</h4>
-                    <ul>
+                    <ul id="portfoliolinks">
                         <li>JYU Gitlab</li>
                         <li>Github</li>
                         <li>LinkedIn</li>
                     </ul>
                     <h4>Professional skills</h4>
-                    <ul>
+                    <ul id="profskills">
                         <li>Strong in</li>
                         <ul>
                             <li>Java</li>
@@ -27,7 +29,7 @@ function Info(props) {
                         </ul>
                     </ul>
                     <h4>Language skills</h4>
-                    <ul>
+                    <ul id="langskills">
                         <li>Fluent in</li>
                         <ul>
                             <li>Finnish</li>
@@ -48,6 +50,7 @@ function Info(props) {
                     </p>
                     <h3>Education</h3>
                     <div class="educationCard">
+                        <h4>University of Jyväskylä</h4>
                         <div>
                             <header>
                                 <p>B.Sc. Mathematical Information Technology</p>

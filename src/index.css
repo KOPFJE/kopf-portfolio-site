@@ -23,10 +23,11 @@ a:hover {
   color: #a6e0b1;
 }
 
-footer a:visited {
-  text-decoration: none;
+.container {
+  padding: 5px 0 0 0;
 }
 
+/* Header-component */
 #siteheader {
   margin: 0;
   padding-left: 15px;
@@ -37,44 +38,6 @@ footer a:visited {
   text-align: left;
   position: fixed;
   z-index: 2;
-}
-
-#portfoliolinks {
-  margin: 0;
-  padding: 0;
-}
-
-#portfoliolinks li {
-  display: block;
-  margin: auto;
-  margin-bottom: 5px;
-  width : 200px;
-  text-align: center;
-  height: 40px;
-  background-color: #636363;
-  border-radius: 8px;
-}
-
-#portfoliolinks li:hover {
-  background-color:#67d07a;
-}
-
-#portfoliolinks a, #portfoliolinks a:visited {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 10px;
-  color: #ededed;
-  text-decoration: none;
-}
-
-#portfoliolinks a:hover {
-  color:#262626;
-}
-
-.container {
-  padding: 5px 0 0 0;
 }
 
 #logo {
@@ -111,6 +74,7 @@ footer a:visited {
   text-decoration: none;
 }
 
+/* Content-component */
 #contentbg {
   background: url(/public/bg.png) #262626;
   background-position: center 50px;
@@ -127,9 +91,10 @@ footer a:visited {
   width: 50%;
   margin: auto;
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
+/* PortfolioPost-component */
 .postheading {
   color:#67d07a;
   font-family: 'Coves Light';
@@ -217,10 +182,18 @@ footer a:visited {
   content: '';
 }
 
+/* Info-component */
 #infocontent {
   padding: 15px;
   width: 75%;
   margin: auto;
+}
+
+#infocontent h2 {
+  margin-top: -1.3em;
+  margin-bottom: 0.5em;
+  font: 2.5em 'Coves Light';
+  color: #67d07a;
 }
 
 #infocontainer {
@@ -228,20 +201,96 @@ footer a:visited {
   border-bottom: 1px solid #67d07a;
   padding-bottom:20px;
 }
+
+#infocontainer h3 {
+  font: 2em 'Coves Light';
+  color: #67d07a;
+}
+
+#infocontainer h4 {
+  font: 1.75em 'Coves Light';
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  color: #67d07a;
+}
+
 #sideinfo {
   width: 20%;
 }
 
 #aboutme {
-  width: 8  0%;
+  width: 80%;
 }
 
+#infoimage {
+  width: 75%;
+  height:auto;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid #67d07a;
+}
+
+#portfoliolinks {
+  margin: 0;
+  padding: 0;
+}
+
+#portfoliolinks li {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  width : 50%;
+  text-align: center;
+  height: 25px;
+  color: #ededed;
+  background-color: #636363;
+  border-radius: 8px;
+}
+
+#portfoliolinks li:hover {
+  background-color:#67d07a;
+}
+
+#portfoliolinks a, #portfoliolinks a:visited {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+  text-decoration: none;
+}
+
+#portfoliolinks li:hover {
+  color:#262626;
+}
+
+#profskills, #langskills {
+  color:#67d07a;
+  font-weight: bold;
+  list-style: none;
+  padding-left: 0;
+}
+#profskills ul, #langskills ul {
+  color:#ededed;
+  font-weight: normal;
+  list-style: inside;
+  padding-left: 1.5em;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/* Footer-component */
 #mainfooter {
   height: 8em;
   display: block;
-  margin-top: -15px;
   text-align: center;
 }
+
+#mainfooter a:visited {
+  text-decoration: none;
+}
+
 /* Hamburger menu */
 #menu__toggle {
   opacity: 0;
