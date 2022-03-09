@@ -7,8 +7,16 @@ body {
   color: #ededed;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.visible {
+  animation: fadein 1s forwards;
 }
 
 a, a:visited {
@@ -30,7 +38,7 @@ a:hover {
 /* Header-component */
 #siteheader {
   margin: 0;
-  padding-left: 15px;
+  padding: 0 1em 0 1em;
   width: 100%;
   height: 75px;
   background: #141414;
@@ -38,10 +46,16 @@ a:hover {
   text-align: left;
   position: fixed;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
+  order: 0;
   width: 200px;
+  padding-bottom: 0.75em;
   text-align: center;
 }
 
@@ -123,14 +137,10 @@ a:hover {
 .postcontent img {
   display: block;
   border: 1px solid rgba(0,0,0,.4);
-  max-width: 50%;
-  max-height: 20%;
+  max-width: 45%;
+  height: auto;
   border-radius: 3%;
   box-shadow:2px 2px 2px rgba(0, 0, 0, .4);
-}
-
-.visible {
-  animation: fadein 1s forwards;
 }
 
 .projectinfo {
@@ -184,13 +194,14 @@ a:hover {
 
 /* Info-component */
 #infocontent {
-  padding: 15px;
+  padding: 0;
   width: 75%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #infocontent h2 {
-  margin-top: -1.3em;
+  margin-top: -1em;
   margin-bottom: 0.5em;
   font: 2.5em 'Coves Light';
   color: #67d07a;
@@ -199,16 +210,18 @@ a:hover {
 #infocontainer {
   display: flex;
   border-bottom: 1px solid #67d07a;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
 #infocontainer h3 {
   font: 2em 'Coves Light';
+  margin-bottom: 0;
   color: #67d07a;
 }
 
 #infocontainer h4 {
   font: 1.75em 'Coves Light';
+  margin-top: 0;
   margin-bottom: 0;
   margin-top: 0.5em;
   color: #67d07a;
@@ -219,15 +232,18 @@ a:hover {
 }
 
 #aboutme {
+  margin-top: -40px;
   width: 80%;
 }
 
 #infoimage {
-  width: 75%;
-  height:auto;
-  margin: auto;
+  width:60%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0 auto;
   border-radius: 50%;
   border: 3px solid #67d07a;
+  pointer-events: none;
 }
 
 #portfoliolinks {
@@ -239,9 +255,8 @@ a:hover {
   display: block;
   padding-top: 5px;
   padding-bottom: 0;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  width : 50%;
+  margin: 5px auto 5px auto;
+  width : 40%;
   text-align: center;
   height: 25px;
   color: #ededed;
@@ -257,11 +272,12 @@ a:hover {
   display: inline-block;
   width: 100%;
   height: 100%;
+  color: #141414;
   vertical-align: center;
   text-decoration: none;
 }
 
-#portfoliolinks li:hover {
+#portfoliolinks li a:hover {
   color:#262626;
 }
 
@@ -283,6 +299,7 @@ a:hover {
 /* Footer-component */
 #mainfooter {
   height: 8em;
+  padding: 30px 0 0 0;
   display: block;
   text-align: center;
 }
@@ -291,85 +308,43 @@ a:hover {
   text-decoration: none;
 }
 
-/* Hamburger menu */
-#menu__toggle {
-  opacity: 0;
+/* Navigation */
+#siteheader input[type="checkbox"],
+#siteheader .hamburger-lines {
+  display: none;
 }
-#menu__toggle:checked + .menu__btn > span {
-  transform: rotate(45deg);
-  background-color: #67d07a;
-}
-#menu__toggle:checked + .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0deg);
-  background-color: #67d07a;
-}
-#menu__toggle:checked + .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-  background-color: #67d07a;
-}
-#menu__toggle:checked ~ .menu__box {
-  right: 0 !important;
-}
-.menu__btn {
-  position: fixed;
-  top: 35px;
-  right: 35px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 3;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
+
+.navbar-container {
   width: 100%;
-  height: 3px;
-  background-color: #67d07a;
-  transition-duration: .25s;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-.menu__box {
-  display: block;
-  position: fixed;
-  text-align: left;
-  top: 0;
-  right: -100%;
-  width: 300px;
+  display: flex;
+  justify-content: space-between;
   height: 100%;
-  margin: 0;
-  padding: 80px 0;
+  align-items: center;
+}
+
+.menu-items {
+  order: 1;
+  margin-right: 5em;
+  display: flex;
+}
+
+.menu-items li {
   list-style: none;
-  background-color: #00000050;
-  box-shadow: 2px 0 6px 2px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
-  z-index: 1;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #67d07a;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+
+.menu-items a {
   text-decoration: none;
-  transition-duration: .25s;
-}
-.menu__item:hover {
-  background-color: #444444;
-}
-.menu__item:visited, .menu__item:hover, .menu__item:visited:hover {
   color: #67d07a;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #a6e0b1;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Animations */
@@ -392,4 +367,40 @@ a:hover {
 @font-face {
   font-family: 'Coves Light';
   src: url('/public/Coves Light.otf');
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1400px) {
+  #infocontainer {
+    flex-direction: column;
+  }
+  #aboutme {
+    width: 100%;
+    order:0;
+  }
+  #sideinfo {
+    width: 100%;
+    order:1;
+  }
+  .postcontent {
+    flex-direction: column;
+  }
+  .imgleft, .imgright {
+    order: 0;
+  }
+  #maincontent {
+    width: 90%;
+  }
+  #infoimage {
+    width: 30%;
+  }
+  .postcontent img {
+    min-width: 500px;
+    margin: 10px auto 10px auto;
+  }
+}
+@media screen and (max-width: 860px) {
+  .stackinfo, .teamsize {
+    margin-left: 0;
+  }
 }

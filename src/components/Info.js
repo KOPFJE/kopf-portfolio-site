@@ -3,14 +3,13 @@ function Info(props) {
         <div id="infocontent">
             <h2>Who am I?</h2>
             <div id="infocontainer" class="maincontainer">
-
                 <div id="sideinfo">
                     <img src="/facepic.jpg" alt="Me" id="infoimage" />
                     <h4>Links</h4>
                     <ul id="portfoliolinks">
-                        <li>JYU Gitlab</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
+                        <li><a href="https://gitlab.jyu.fi/lajavani/">JYU Gitlab</a></li>
+                        <li><a href="https://github.com/KOPFJE/">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/lauri-niskanen-380615173/">LinkedIn</a></li>
                     </ul>
                     <h4>Professional skills</h4>
                     <ul id="profskills">
