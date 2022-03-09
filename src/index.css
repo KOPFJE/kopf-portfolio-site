@@ -11,6 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+a, a:visited {
+ color: #67d07a; 
+}
+
+strong, b {
+  color: #67d07a;
+}
+
+a:hover {
+  color: #a6e0b1;
+}
+
+footer a:visited {
+  text-decoration: none;
+}
+
 #siteheader {
   margin: 0;
   padding-left: 15px;
@@ -209,16 +225,21 @@ code {
 
 #infocontainer {
   display: flex;
+  border-bottom: 1px solid #67d07a;
+  padding-bottom:20px;
 }
 #sideinfo {
   width: 20%;
 }
 
 #aboutme {
-  width: 80%;
+  width: 8  0%;
 }
 
 #mainfooter {
+  height: 8em;
+  display: block;
+  margin-top: -15px;
   text-align: center;
 }
 /* Hamburger menu */
