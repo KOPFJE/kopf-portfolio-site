@@ -1,6 +1,6 @@
 function Footer(props) {
     return(
-        <footer>
+        <footer id="mainfooter">
             <p>Lauri Niskanen 2022</p>
         </footer>
     );
