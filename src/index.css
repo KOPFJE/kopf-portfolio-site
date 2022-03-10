@@ -296,6 +296,29 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.aboutmecard {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #262626;
+}
+
+.degreeCard {
+  padding-left: 30px;
+}
+
+.degreeCard header p {
+  line-height: 0.25em;
+  color: #67d07a;
+  font-weight: bold;
+}
+
+.degreeCard header {
+  display: block;
+  background: #262626;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  border-radius: 1em;
+}
+
 /* Footer-component */
 #mainfooter {
   height: 8em;

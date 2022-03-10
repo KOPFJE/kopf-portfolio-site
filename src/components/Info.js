@@ -1,3 +1,5 @@
+import EducationCard from './EducationCard.js';
+
 function Info(props) {
     return(
         <div id="infocontent">
@@ -42,38 +44,15 @@ function Info(props) {
                     </ul>
                 </div>
                 <div id="aboutme">
-                    <h3>About me</h3>
-                    <p>
-                        I am a postgraduate mathematical IT student working towards my master's degree. My plan right now is to get some work experience full-time for a while, and 
-                        then shift into finishing my thesis part-time while working. I have experience programming in a team or solo.
-                    </p>
+                    <div class="aboutmecard">
+                        <h3>About me</h3>
+                        <p>
+                            I am a postgraduate mathematical IT student working towards my master's degree. My plan right now is to get some work experience full-time for a while, and 
+                            then shift into finishing my thesis part-time while working. I have experience programming in a team or solo.
+                        </p>
+                    </div>
                     <h3>Education</h3>
-                    <div class="educationCard">
-                        <h4>University of Jyväskylä</h4>
-                        <div>
-                            <header>
-                                <p>B.Sc. Mathematical Information Technology</p>
-                                <p>Graduated: September 2020</p>
-                            </header>
-                            <content>
-                                <ul>
-                                    <li>Minor in mathematics (25 credits)</li>
-                                    <li>Orientation for master's in games and gamification</li>
-                                </ul>
-                            </content>
-                        </div>                     
-                    </div>
-                    <div>
-                    <header>
-                            <p>M.Sc. Mathematical Information Technology</p>
-                            <p>Ongoing</p>
-                        </header>
-                        <content>
-                            <ul>
-                                <li>Orientation for software and telecommunication technology</li>
-                            </ul>
-                        </content> 
-                    </div>
+                        <EducationCard />
                 </div>
             </div>
         </div>
