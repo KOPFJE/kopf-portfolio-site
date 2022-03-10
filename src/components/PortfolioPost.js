@@ -1,9 +1,9 @@
 function PortfolioPost(props) {
     return(
         <div class="portfolioPost">
-            <h3>TJTS5901 - Digicanem Dogmap</h3>
+            <h3 class="postheading">TJTS5901 - Digicanem Dogmap</h3>
             <header class="projectinfo">
-                <p class="teamsize group">Group: 4</p>
+                <span class="teamsize">Group: 4</span>
                 <ul class="languageinfo">
                     <li>Python</li>
                     <li>JavaScript</li>
@@ -19,14 +19,17 @@ function PortfolioPost(props) {
                     <li>GitLab CI/CD</li>
                 </ul>
             </header>
-            <content>
-                <p>
-                    Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                    Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                    Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                    Test text test text. Test text test text.
-                </p>
-            </content>
+            <div class="postcontent">
+                <img src="/digicanem_example.png" alt="Example" class={props.side} />
+                <content>
+                    <p>
+                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
+                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
+                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
+                        Test text test text. Test text test text.
+                    </p>
+                </content>
+            </div>
         </div>
     );
 }
