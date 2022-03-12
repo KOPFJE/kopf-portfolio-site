@@ -5,11 +5,14 @@ const port = process.env.PORT || 5000;
 const dbo = require("./db/conn");
 
 const app = express();
+
+// Dependencies for the app.
 app.use(cors());
 app.use(express.json());
+app.use(require("./routes/posts"));
 
 app.listen(port, () => {
-    // perform a database connection when server starts
+    // Connect to MongoDB using the .env file configuration.
     dbo.connectToServer(function (err) {
       if (err) console.error(err);
   

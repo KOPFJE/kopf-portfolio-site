@@ -9,6 +9,7 @@ const client = new MongoClient(Db, {
 
 let _db;
 
+// Export module for server.js with the configuration given by the .env file.
 module.exports = {
     connectToServer : function(callback) {
         client.connect(function (err, db) {
