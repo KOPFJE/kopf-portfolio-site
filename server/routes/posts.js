@@ -52,3 +52,6 @@ postRoutes.route("/posts/add").post(
         );
     }
 );
+
+
+module.exports = postRoutes;
