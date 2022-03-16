@@ -7,12 +7,7 @@ import Dashboard from './components/Dashboard';
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Mainpage />} />
-          <Route path="/admin" element={<Dashboard />} />
-        </Routes>
-      </BrowserRouter>
+      <Mainpage />
     </div>
   );
 }
