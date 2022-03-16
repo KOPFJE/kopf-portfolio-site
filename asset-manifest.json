@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kopf-portfolio-site/static/css/main.0ac5b9c3.css",
-    "main.js": "/kopf-portfolio-site/static/js/main.505939e0.js",
-    "static/js/787.3e792fff.chunk.js": "/kopf-portfolio-site/static/js/787.3e792fff.chunk.js",
-    "static/media/Coves Light.otf": "/kopf-portfolio-site/static/media/Coves Light.41080f22fadeee876358.otf",
-    "static/media/Coves Bold.otf": "/kopf-portfolio-site/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
-    "static/media/bg.png": "/kopf-portfolio-site/static/media/bg.995761eef7597e1ddb65.png",
-    "index.html": "/kopf-portfolio-site/index.html",
-    "main.0ac5b9c3.css.map": "/kopf-portfolio-site/static/css/main.0ac5b9c3.css.map",
-    "main.505939e0.js.map": "/kopf-portfolio-site/static/js/main.505939e0.js.map",
-    "787.3e792fff.chunk.js.map": "/kopf-portfolio-site/static/js/787.3e792fff.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.e5588ba5.css",
+    "main.js": "/portfolio/static/js/main.89bb9d35.js",
+    "static/js/787.3e792fff.chunk.js": "/portfolio/static/js/787.3e792fff.chunk.js",
+    "static/media/Coves Light.otf": "/portfolio/static/media/Coves Light.41080f22fadeee876358.otf",
+    "static/media/Coves Bold.otf": "/portfolio/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
+    "static/media/bg.png": "/portfolio/static/media/bg.995761eef7597e1ddb65.png",
+    "index.html": "/portfolio/index.html",
+    "main.e5588ba5.css.map": "/portfolio/static/css/main.e5588ba5.css.map",
+    "main.89bb9d35.js.map": "/portfolio/static/js/main.89bb9d35.js.map",
+    "787.3e792fff.chunk.js.map": "/portfolio/static/js/787.3e792fff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ac5b9c3.css",
-    "static/js/main.505939e0.js"
+    "static/css/main.e5588ba5.css",
+    "static/js/main.89bb9d35.js"
   ]
 }
