@@ -143,8 +143,8 @@ a:hover {
   border: 1px solid rgba(0,0,0,.4);
   max-width: 45%;
   height: auto;
-  border-radius: 3%;
-  box-shadow:2px 2px 2px rgba(0, 0, 0, .4);
+  border-radius: 1em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
 }
 
 .projectinfo {
@@ -352,10 +352,6 @@ a:hover {
 }
 
 /* Navigation */
-#siteheader input[type="checkbox"],
-#siteheader .hamburger-lines {
-  display: none;
-}
 
 .navbar-container {
   width: 100%;
@@ -445,5 +441,8 @@ a:hover {
 @media screen and (max-width: 860px) {
   .stackinfo, .teamsize {
     margin-left: 0;
+  }
+  .languageinfo {
+    margin-right: 15px;
   }
 }
