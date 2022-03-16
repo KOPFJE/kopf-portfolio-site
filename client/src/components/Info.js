@@ -8,10 +8,10 @@ function Info(props) {
                 <div id="sideinfo">
                     <img src="/facepic.jpg" alt="Me" id="infoimage" />
                     <h4>Links</h4>
-                    <ul id="portfoliolinks">
-                        <li><a href="https://gitlab.jyu.fi/lajavani/">JYU Gitlab</a></li>
-                        <li><a href="https://github.com/KOPFJE/">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/lauri-niskanen-380615173/">LinkedIn</a></li>
+                    <ul class="portfoliolinks">
+                        <li class="link-gitlab"><a href="https://gitlab.jyu.fi/lajavani/">JYU Gitlab</a></li>
+                        <li class="link-github"><a href="https://github.com/KOPFJE/">Github</a></li>
+                        <li class="link-linkedin"><a href="https://www.linkedin.com/in/lauri-niskanen-380615173/">LinkedIn</a></li>
                     </ul>
                     <h4>Professional skills</h4>
                     <ul id="profskills">

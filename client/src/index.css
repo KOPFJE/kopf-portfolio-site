@@ -122,6 +122,10 @@ a:hover {
   display: flex;
 }
 
+.posttext {
+  min-width: 75%;
+}
+
 .imgleft {
   order: 0;
   margin-left: -25%;
@@ -154,9 +158,9 @@ a:hover {
 .teamsize {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/public/teamsize.png');
+  background-image: url('/public/icons/teamsize.png');
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 24px;
   padding-left: 2em;
 }
 
@@ -167,16 +171,16 @@ a:hover {
 }
 
 .stackinfo {
-  background-image: url('/public/stack-45.png');
+  background-image: url('/public/icons/stack.png');
   background-repeat: no-repeat;
-  background-size: 4%;
+  background-size: 16px;
   padding-left: 1.5em;
 }
 
 .languageinfo {
-  background-image: url('/public/languageicon.png');
+  background-image: url('/public/icons/languageicon.png');
   background-repeat: no-repeat;
-  background-size: 12%;
+  background-size: 24px;
   padding-left: 2em;
 }
 
@@ -246,29 +250,45 @@ a:hover {
   pointer-events: none;
 }
 
-#portfoliolinks {
+.portfoliolinks {
   margin: 0;
   padding: 0;
 }
 
-#portfoliolinks li {
+.portfoliolinks li {
   display: block;
   padding-top: 5px;
+  padding-left: 45px;
   padding-bottom: 0;
   margin: 5px auto 5px auto;
-  width : 40%;
-  text-align: center;
+  width : 30%;
+  text-align: left;
   height: 25px;
   color: #ededed;
   background-color: #636363;
   border-radius: 8px;
 }
 
-#portfoliolinks li:hover {
+.link-github {
+  background: url('/public/icons/github-grey.png') no-repeat 10px; 
+  background-size: 24px;
+}
+
+.link-gitlab {
+    background: url('/public/icons/gitlab-grey.png') no-repeat 10px; 
+    background-size: 24px;
+}
+
+.link-linkedin {
+  background: url('/public/icons/linkedin-grey.png') no-repeat 10px; 
+  background-size: 24px;
+}
+
+.portfoliolinks li:hover {
   background-color:#67d07a;
 }
 
-#portfoliolinks a, #portfoliolinks a:visited {
+.portfoliolinks a, .portfoliolinks a:visited {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -277,7 +297,7 @@ a:hover {
   text-decoration: none;
 }
 
-#portfoliolinks li a:hover {
+.portfoliolinks li a:hover {
   color:#262626;
 }
 

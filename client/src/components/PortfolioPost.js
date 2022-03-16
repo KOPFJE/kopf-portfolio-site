@@ -1,33 +1,41 @@
+import ReactMarkdown from 'react-markdown';
+
 function PortfolioPost(props) {
+    const teamsize = checkTeamsize(props.content.teamsize);
+    const languagestack = props.content.languagestack.map(lang => <li>{lang}</li>);
+    const techstack = props.content.techstack.map(tech => <li>{tech}</li>);
+
+
+    function checkTeamsize(givensize) {
+        if(isNaN(parseInt(givensize)) || givensize <= 0) return "Non-defined team size";
+        switch (givensize) {
+            case 1:
+                return "Solo";
+            case 2:
+                return "Pair";
+            default:
+                return "Group: " + givensize;
+        }
+    }
+
+    
     return(
         <div class="portfolioPost">
-            <h3 class="postheading">TJTS5901 - Digicanem Dogmap</h3>
+            <h3 class="postheading">{ props.content.title }</h3>
             <header class="projectinfo">
-                <span class="teamsize">Group: 4</span>
+                <span class="teamsize">{teamsize}</span>
                 <ul class="languageinfo">
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                    {languagestack}
                 </ul>
                 <ul class="stackinfo">
-                    <li>Flask</li>
-                    <li>Leaflet</li>
-                    <li>MongoDB</li>
-                    <li>Azure DevOps</li>
-                    <li>Docker</li>
-                    <li>GitLab CI/CD</li>
+                    {techstack}
                 </ul>
             </header>
             <div class="postcontent">
-                <img src="/digicanem_example.png" alt="Example" class={props.side} />
-                <content>
-                    <p>
-                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                        Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. Test text test text. 
-                        Test text test text. Test text test text.
-                    </p>
+                <img src={ props.content.imglink } alt="Example" class={props.side} />
+                <content class="posttext">
+                    <ReactMarkdown children={ props.content.content } />
+                    <p>You can find the repository at <a href={props.content.infolink}>{props.content.infolink}</a>.</p>
                 </content>
             </div>
         </div>
