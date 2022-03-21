@@ -141,6 +141,7 @@ a:hover {
 .postcontent img {
   display: block;
   border: 1px solid rgba(0,0,0,.4);
+  object-fit: cover;
   max-width: 45%;
   height: auto;
   border-radius: 1em;
@@ -161,6 +162,7 @@ a:hover {
   background-image: url('/public/icons/teamsize.png');
   background-repeat: no-repeat;
   background-size: 24px;
+  background-position-y: center;
   padding-left: 2em;
 }
 
@@ -173,6 +175,7 @@ a:hover {
 .stackinfo {
   background-image: url('/public/icons/stack.png');
   background-repeat: no-repeat;
+  background-position-y: center;
   background-size: 16px;
   padding-left: 1.5em;
 }
@@ -180,6 +183,7 @@ a:hover {
 .languageinfo {
   background-image: url('/public/icons/languageicon.png');
   background-repeat: no-repeat;
+  background-position-y: center;
   background-size: 24px;
   padding-left: 2em;
 }
