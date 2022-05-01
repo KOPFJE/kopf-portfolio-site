@@ -429,10 +429,6 @@ a:hover {
   .postcontent {
     flex-direction: column;
   }
-  .postcontent img {
-    max-width: 80%;
-    flex-direction: column;
-  }
   .imgleft, .imgright {
     order: 0;
   }
@@ -440,10 +436,10 @@ a:hover {
     width: 90%;
   }
   #infoimage {
-    width: 50%;
+    width: 30%;
   }
   .postcontent img {
-    min-width: 500px;
+    min-width: 400px;
     margin: 10px auto 10px auto;
   }
 }
