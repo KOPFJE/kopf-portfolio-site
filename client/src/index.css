@@ -429,6 +429,10 @@ a:hover {
   .postcontent {
     flex-direction: column;
   }
+  .postcontent img {
+    max-width: 80%;
+    flex-direction: column;
+  }
   .imgleft, .imgright {
     order: 0;
   }
@@ -436,7 +440,7 @@ a:hover {
     width: 90%;
   }
   #infoimage {
-    width: 30%;
+    width: 50%;
   }
   .postcontent img {
     min-width: 500px;
@@ -444,10 +448,25 @@ a:hover {
   }
 }
 @media screen and (max-width: 860px) {
+  #logo h1 {
+    font-size: 1.6em;
+  }
+  #logo h2 {
+    font-size: 1em;
+  }
+  .postheading {
+    line-height: 1em;
+  }
+  .degreeCard header p {
+    line-height: 1em;
+  }
   .stackinfo, .teamsize {
     margin-left: 0;
   }
   .languageinfo {
     margin-right: 15px;
+  }
+  #mainfooter {
+    width: 90%;
   }
 }
