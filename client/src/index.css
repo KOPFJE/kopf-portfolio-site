@@ -90,7 +90,7 @@ a:hover {
 
 /* Content-component */
 #contentbg {
-  background: url(/public/bg.png) #262626;
+  background: url(/public/bg.png) #2A2A2A;
   background-position: center 50px;
   background-repeat: repeat-x;
   min-height: 500px;
