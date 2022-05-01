@@ -32,7 +32,7 @@ function PortfolioPost(props) {
                 </ul>
             </header>
             <div class="postcontent">
-                <img src={ props.content.imglink } alt="Example" class={props.side} />
+                <img src={ process.env.PUBLIC_URL + props.content.imglink } alt="Example" class={props.side} />
                 <content class="posttext">
                     <ReactMarkdown children={ props.content.content } />
                     <p>You can find the repository at <a href={props.content.infolink}>{props.content.infolink}</a>.</p>

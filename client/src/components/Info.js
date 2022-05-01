@@ -6,7 +6,7 @@ function Info(props) {
             <h2>Who am I?</h2>
             <div id="infocontainer" class="maincontainer">
                 <div id="sideinfo">
-                    <img src="https://raw.githubusercontent.com/KOPFJE/kopf-portfolio-site/main/client/public/facepic.jpg" alt="Me" id="infoimage" />
+                    <img src={ process.env.PUBLIC_URL + "/facepic.jpg" } alt="Me" id="infoimage" />
                     <h4>Links</h4>
                     <ul class="portfoliolinks">
                         <li class="link-gitlab"><a href="https://gitlab.jyu.fi/lajavani/">JYU Gitlab</a></li>
