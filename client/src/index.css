@@ -440,6 +440,7 @@ a:hover {
   }
   .postcontent img {
     min-width: 300px;
+    max-width: 50%;
     margin: 10px auto 10px auto;
   }
 }
