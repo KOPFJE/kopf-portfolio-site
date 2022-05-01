@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kopf-portfolio-site/static/css/main.777285d8.css",
+    "main.css": "/kopf-portfolio-site/static/css/main.72437800.css",
     "main.js": "/kopf-portfolio-site/static/js/main.56c0f9f8.js",
     "static/js/787.3e792fff.chunk.js": "/kopf-portfolio-site/static/js/787.3e792fff.chunk.js",
     "static/media/Coves Light.otf": "/kopf-portfolio-site/static/media/Coves Light.41080f22fadeee876358.otf",
     "static/media/Coves Bold.otf": "/kopf-portfolio-site/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
     "static/media/bg.png": "/kopf-portfolio-site/static/media/bg.995761eef7597e1ddb65.png",
     "index.html": "/kopf-portfolio-site/index.html",
-    "main.777285d8.css.map": "/kopf-portfolio-site/static/css/main.777285d8.css.map",
+    "main.72437800.css.map": "/kopf-portfolio-site/static/css/main.72437800.css.map",
     "main.56c0f9f8.js.map": "/kopf-portfolio-site/static/js/main.56c0f9f8.js.map",
     "787.3e792fff.chunk.js.map": "/kopf-portfolio-site/static/js/787.3e792fff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.777285d8.css",
+    "static/css/main.72437800.css",
     "static/js/main.56c0f9f8.js"
   ]
 }
