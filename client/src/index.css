@@ -120,6 +120,7 @@ a:hover {
 
 .postcontent {
   display: flex;
+  margin-bottom: 8em;
 }
 
 .posttext {
